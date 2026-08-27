@@ -2,7 +2,7 @@
 
 - Status: approved local draft
 - Tier: TIER-1 pre-user
-- Version: 1
+- Version: 2
 
 ## User
 
@@ -19,8 +19,9 @@ Clone one public repository, verify the local prerequisites, follow one developm
 3. `./scripts/verify.sh` validates required files, shell syntax, public-boundary patterns, behavior tests, and coverage thresholds.
 4. The tiny example project can add, list, and complete tasks through its public command-line interface using a caller-selected data file.
 5. The repository contains copyable agent, context, feature-specification, implementation-ticket, Obsidian daily-note, and semester-commitment templates.
-6. A new contributor can find the setup path, contribution rules, security policy, issue forms, and pull-request checklist from the root README.
-7. The published material contains no named mentee, undisclosed startup concept, private Atlas content, credentials, private email addresses, or local user paths.
+6. A repository-local `commitment-planner` skill can plan and review written commitments without background automation or unapproved record changes.
+7. A new contributor can find the setup path, contribution rules, security policy, issue forms, and pull-request checklist from the root README.
+8. The published material contains no named mentee, undisclosed startup concept, private Atlas content, credentials, private email addresses, or local user paths.
 
 ## Test seams
 
@@ -37,12 +38,13 @@ Clone one public repository, verify the local prerequisites, follow one developm
 | 3 | `scripts/verify.sh` and `.github/workflows/verify.yml` |
 | 4 | `examples/tiny-project/test/task-list.test.mjs` |
 | 5 | `scripts/verify.sh`: required-path check |
-| 6 | `scripts/verify.sh`: required-path check |
-| 7 | `scripts/verify.sh`: public-boundary scan |
+| 6 | `tests/test_scripts.sh`: `commitment planner has a valid discovery and approval contract` |
+| 7 | `scripts/verify.sh`: required-path check |
+| 8 | `scripts/verify.sh`: public-boundary scan |
 
 ## Removal
 
-The entire slice is removed by reverting the introducing commit or deleting the unpushed local repository. The example project, BB integration, and Obsidian templates are separate directories and can be removed independently.
+The entire slice is removed by reverting the introducing commit or deleting the unpushed local repository. The example project, BB integration, Obsidian templates, and repository-local commitment-planner skill are separate directories and can be removed independently.
 
 ## Metric
 
