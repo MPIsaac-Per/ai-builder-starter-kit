@@ -20,4 +20,17 @@ doctor_output="$(bash "$ROOT_DIR/scripts/doctor.sh" --json)"
 node -e 'const value = JSON.parse(process.argv[1]); if (typeof value.ready !== "boolean") process.exit(1)' "$doctor_output" \
   || fail "doctor did not emit valid readiness JSON"
 
+commitment_skill="$ROOT_DIR/.agents/skills/commitment-planner/SKILL.md"
+[[ -f "$commitment_skill" ]] || fail "commitment planner skill is missing"
+grep -Fxq 'name: commitment-planner' "$commitment_skill" \
+  || fail "commitment planner name is invalid"
+grep -Fq 'description:' "$commitment_skill" \
+  || fail "commitment planner description is missing"
+grep -Fq 'displace, delay, or narrow' "$commitment_skill" \
+  || fail "commitment planner omits the displacement rule"
+grep -Fq 'Do not create background jobs' "$commitment_skill" \
+  || fail "commitment planner permits background automation"
+grep -Fq 'Do not modify records until the user approves' "$commitment_skill" \
+  || fail "commitment planner omits the approval boundary"
+
 echo "PASS: script public interfaces"

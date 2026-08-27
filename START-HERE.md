@@ -47,7 +47,7 @@ The example includes its context, specification, work item, implementation, and 
 
 ## 5. Add the knowledge system
 
-Read [docs/obsidian-setup.md](docs/obsidian-setup.md), then copy the daily and semester templates into your own vault.
+Read [docs/obsidian-setup.md](docs/obsidian-setup.md), then copy the daily and semester templates into your own vault. Ask your coding agent to use the repository-local `commitment-planner` skill to plan or review those records.
 
 ## 6. Run the gate
 

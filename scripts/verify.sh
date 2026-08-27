@@ -16,6 +16,7 @@ required_paths=(
   docs/bb-workbench.md
   docs/obsidian-setup.md
   docs/commitment-system.md
+  .agents/skills/commitment-planner/SKILL.md
   templates/AGENTS.md
   templates/CONTEXT.md
   templates/feature-spec.md

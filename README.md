@@ -31,7 +31,7 @@ See [docs/development-loop.md](docs/development-loop.md).
 ## What is included
 
 - [Development loop](docs/development-loop.md) and [BB workbench](docs/bb-workbench.md)
-- [Obsidian setup](docs/obsidian-setup.md) and [commitment system](docs/commitment-system.md)
+- [Obsidian setup](docs/obsidian-setup.md), [commitment system](docs/commitment-system.md), and repository-local [`commitment-planner`](.agents/skills/commitment-planner/SKILL.md) skill
 - Copyable files under [`templates/`](templates/)
 - A complete, tested [`tiny-project`](examples/tiny-project/README.md)
 - Contribution, security, and publication checks for a public repository
