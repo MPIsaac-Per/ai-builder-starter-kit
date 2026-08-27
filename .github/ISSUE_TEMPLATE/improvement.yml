@@ -1,0 +1,34 @@
+name: Improvement
+description: Propose one verified improvement to the starter kit.
+title: "[Improvement]: "
+labels:
+  - improvement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What job is blocked or confusing?
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Observable outcome
+      description: What behavior or document would prove the improvement?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Source or evidence
+      description: Link the official source or provide a reproducible command.
+    validations:
+      required: true
+  - type: textarea
+    id: removal
+    attributes:
+      label: Removal
+      description: How can the change be removed if it does not work?
+    validations:
+      required: true

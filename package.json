@@ -1,0 +1,24 @@
+{
+  "name": "ai-builder-starter-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A tested starter system for students and solo builders using coding agents, BB, and Obsidian.",
+  "license": "MIT",
+  "author": "Michael Isaac",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MPIsaac-Per/ai-builder-starter-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MPIsaac-Per/ai-builder-starter-kit/issues"
+  },
+  "homepage": "https://github.com/MPIsaac-Per/ai-builder-starter-kit#readme",
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "test": "node --test --experimental-test-coverage --test-coverage-lines=80 --test-coverage-functions=80 --test-coverage-branches=80 tests/*.test.mjs",
+    "verify": "bash scripts/verify.sh"
+  }
+}
