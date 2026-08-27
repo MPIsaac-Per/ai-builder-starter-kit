@@ -45,4 +45,6 @@ Use the commitment-planner skill to review my current commitments.
 
 ## Removal
 
-Archive `Semester Commitments.md` and stop using the daily template. Existing notes remain ordinary Markdown records. Delete `.agents/skills/commitment-planner/` to remove the skill.
+Archive `Semester Commitments.md` and stop using the daily template. Existing notes remain ordinary Markdown records.
+
+Revert the commit that introduced the skill to remove the capability and its verification contract together. For a manual removal, delete `.agents/skills/commitment-planner/`, remove its links from `README.md`, `START-HERE.md`, and this document, remove its acceptance criterion from `docs/spec.md`, and remove its checks from `scripts/verify.sh` and `tests/test_scripts.sh`.
